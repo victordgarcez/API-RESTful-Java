@@ -6,4 +6,7 @@ import victordgarcez.api_rest_cloud.API.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
+
+    boolean existsByAccountNumber(String accountNumber);
+
 }
